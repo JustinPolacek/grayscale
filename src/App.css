@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+header{
+  background:linear-gradient(rgba(0, 0, 0, 0.9), transparent), url('https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg');
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+ 
+
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav{
   display: flex;
-  flex-direction: column;
+  padding: auto;
+  text-decoration: none;
+  
+ 
+  
+}
+
+nav ul  {
+  display: flex;
+  flex: 1 1 40rem;
+  padding: auto;
+  justify-content: space-evenly;
+  text-decoration: none;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 20px;
+  color: black;
+  
+}
+
+ul a{
+  text-decoration: none;
+  transition: 0.2s;
+  
+}
+ul a li:hover {
   color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+h1{
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: flex-start;
+  margin-left: 30px;
+  align-items: center;
+  color: silver;
+  padding: auto;
+  margin-top: 8px;
+  font-weight: 200;
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+nav  li{
+  list-style: none;
+  font-size: 20px;
+  color: silver;
+  font-weight: 300;
 }
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+ 
+ 
+}
+
+.hero h1{
+  font-size: 100px; 
+  letter-spacing: 15px;
+  position: relative;
+  transform: translateY(-70px);
+  font-weight: 400;
+ 
+
+}
+
+.hero p{
+  position: absolute;
+  font-size: 20px;
+  margin-top: 20px;
+
+}
+
+.hero button{
+ position: absolute;
+ cursor: pointer;
+ transform: translateY(80px);
+ font-size: 18px;
+ background-color: #64a19d;
+ color: silver;
+ letter-spacing: 3px;
+ border-radius: 4px;
+ background-color: rgb(71, 126, 108);
+ border: none;
+ color: white;
+ padding: 16px 32px;
+ text-align: center;
+ font-size: 16px;
+ transition: 0.5s;
+ margin: 40px 40px
+}
+
+.hero button:hover {
+  background-color: #64a19d;
+  color: black;
+
+}
+
+  
+  
+  @media(max-width: 750px){
+    .hero h1{
+      font-size: 60px;
+    }
+
+  }
+  
